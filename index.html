@@ -24,21 +24,23 @@
         </p>
       </div>
     </div>
-    <!-- Attendance tracking -->
+    <!-- Attendance tracking (updated live by script.js) -->
     <div class="attendance-tracker">
       <div class="attendance-header">
         <i class="fas fa-users"></i>
+        <!-- attendeeCount is increased in JavaScript after each valid check-in -->
         Attendance: <span id="attendeeCount">0</span>/60
       </div>
       <div class="progress-container">
+        <!-- progressBar width is updated in JavaScript based on total attendance -->
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </div>
     <div class="container">
-      <!-- Feedback message -->
+      <!-- Feedback message area (default text, success, or validation messages) -->
       <p id="greeting"></p>
 
-      <!-- Check-in form -->
+      <!-- Check-in form read by JavaScript when submitted -->
       <form class="check-in" id="checkInForm">
         <label for="attendeeName" class="form-label">Attendee Check-In</label>
         <div class="form-group">
@@ -52,6 +54,8 @@
             />
             <select id="teamSelect" name="team" required>
               <option value="" disabled selected>Select Team...</option>
+              <!-- The value is used by JavaScript to find matching IDs:
+                   water -> waterCount and waterList -->
               <option value="water">Team Water Wise</option>
               <option value="zero">Team Net Zero</option>
               <option value="power">Team Renewables</option>
@@ -63,7 +67,7 @@
         </div>
       </form>
 
-      <!-- Team stats -->
+      <!-- Team stats (each counter is increased by JavaScript) -->
       <div class="team-stats">
         <h3>Team Attendance</h3>
         <div class="teams-grid">
@@ -82,7 +86,7 @@
         </div>
       </div>
 
-      <!-- Team attendee names -->
+      <!-- Team attendee names (JavaScript creates <li> items inside these lists) -->
       <div class="team-names">
         <h3>Attendees by Team</h3>
         <div class="names-grid">

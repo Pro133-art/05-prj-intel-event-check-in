@@ -179,7 +179,7 @@ button .fas {
   color: #64748b;
 }
 
-/* Attendance tracker styling */
+/* Attendance tracker block shown above the form */
 .attendance-tracker {
   max-width: 700px;
   width: 90%;
@@ -198,6 +198,7 @@ button .fas {
   color: #64748b;
 }
 
+/* Live total value that JavaScript updates after each check-in */
 #attendeeCount {
   color: #0071c5;
   font-size: 24px;
@@ -211,13 +212,13 @@ button .fas {
   margin-right: 4px;
 }
 
-/* Max attendees text */
+/* Styles the static "/60" max-capacity text next to the live counter */
 .attendance-header span:last-child {
   color: #64748b;
   font-size: 17px;
 }
 
-/* Progress container - simplified */
+/* Progress bar background */
 .progress-container {
   width: 100%;
   max-width: 500px;
@@ -229,6 +230,7 @@ button .fas {
   position: relative;
 }
 
+/* Filled part of the progress bar (JavaScript changes this width) */
 .progress-bar {
   width: 0%;
   height: 100%;
@@ -243,7 +245,7 @@ button .fas {
   margin-top: 0;
 }
 
-/* Messages */
+/* Feedback message area controlled by JavaScript (hidden until message is set) */
 #greeting {
   font-weight: 500;
   font-size: 18px;
@@ -254,6 +256,7 @@ button .fas {
   display: none;
 }
 
+/* Success look used when a valid check-in is submitted */
 .success-message {
   background-color: #e8f4fc;
   color: #003c71;
@@ -305,7 +308,7 @@ select {
   min-width: 140px;
 }
 
-/* Team Stats */
+/* Team attendance summary cards */
 .team-stats {
   margin-top: 30px;
   padding-top: 30px;
@@ -332,7 +335,7 @@ select {
   gap: 5px;
 }
 
-/* Team card colors */
+/* Team-specific background colors for attendance cards */
 .team-card.water {
   background-color: #e8f7fc;
 }
@@ -349,7 +352,7 @@ select {
   color: #475569;
 }
 
-/* Team Names */
+/* Team attendee name lists */
 .team-names {
   margin-top: 24px;
   padding-top: 24px;
@@ -400,6 +403,7 @@ select {
   min-height: 24px;
 }
 
+/* Each attendee name item added by JavaScript appears as one row */
 .names-list li {
   font-size: 14px;
   color: #334155;
