@@ -35,5 +35,7 @@ form.addEventListener("submit", function(event) {
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1; 
 
   // Show welcome message
-  const message = 'Welcome, ' + name + '! You have checked in with team ' + teamName + '.';
+  const message = `Welcome, ${name}! from ${teamName}`;
+  console.log(message);
+  form.reset();
 });
