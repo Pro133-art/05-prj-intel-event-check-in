@@ -25,4 +25,15 @@ form.addEventListener("submit", function(event) {
   // Increment count 
   count++;
   console.log("Total check-ins: ", count);
+
+  // Update progress bar
+  const percentage = Math.round((count/ maxCount)*100) + "%";
+  console.log(`Progress: ${percentage}`);
+
+  // Update team counter
+  const teamCounter= document.getElementById(team + "Count");
+  teamCounter.textContent = parseInt(teamCounter.textContent) + 1; 
+
+  // Show welcome message
+  const message = 'Welcome, ' + name + '! You have checked in with team ' + teamName + '.';
 });
