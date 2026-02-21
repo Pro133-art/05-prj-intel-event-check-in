@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,7 +28,7 @@
     <div class="attendance-tracker">
       <div class="attendance-header">
         <i class="fas fa-users"></i>
-        Attendance: <span id="attendeeCount">0</span>/50
+        Attendance: <span id="attendeeCount">0</span>/60
       </div>
       <div class="progress-container">
         <div id="progressBar" class="progress-bar"></div>
@@ -78,6 +78,25 @@
           <div class="team-card power">
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team attendee names -->
+      <div class="team-names">
+        <h3>Attendees by Team</h3>
+        <div class="names-grid">
+          <div class="names-column water">
+            <p class="names-title">🌊 Team Water Wise</p>
+            <ul id="waterList" class="names-list"></ul>
+          </div>
+          <div class="names-column zero">
+            <p class="names-title">🌿 Team Net Zero</p>
+            <ul id="zeroList" class="names-list"></ul>
+          </div>
+          <div class="names-column power">
+            <p class="names-title">⚡ Team Renewables</p>
+            <ul id="powerList" class="names-list"></ul>
           </div>
         </div>
       </div>

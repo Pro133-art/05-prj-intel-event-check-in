@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -348,6 +349,68 @@ select {
   color: #475569;
 }
 
+/* Team Names */
+.team-names {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.team-names h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.names-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.names-column {
+  padding: 15px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.names-column.water {
+  background-color: #e8f7fc;
+}
+
+.names-column.zero {
+  background-color: #ecfdf3;
+}
+
+.names-column.power {
+  background-color: #fff7ed;
+}
+
+.names-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.names-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 24px;
+}
+
+.names-list li {
+  font-size: 14px;
+  color: #334155;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.names-list li:last-child {
+  border-bottom: none;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
@@ -379,6 +442,10 @@ select {
   }
 
   .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .names-grid {
     grid-template-columns: 1fr;
   }
 }
